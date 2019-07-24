@@ -1,0 +1,63 @@
+body {
+    background-color: gray;
+    color: white;
+    font-family: Arial, Verdana;
+}
+
+h1, h2 {
+    color: lightblue;
+}
+
+a:visited {
+    color: #ff2b39;
+}
+
+a:link {
+    color: #fff835;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fav-movie {
+    font-style: italic;
+}
+
+.highlight-text {
+    color: yellow;
+    font-weight: bold;
+}
+
+p.drop-caps:first-letter {
+    color: #903;
+    float: left;
+    font-family: Georgia;
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 0px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+li>dl {
+    margin: 0px;
+}
+li>dl>dt {
+     font-weight: bold;
+     color: orange;
+ }
+li>dl>dd {
+    font-style: italic;
+    color: lightgreen;
+}
+
+ol {
+    transform: rotate(180deg);
+    margin-left: 20px;
+}
+ol > li {
+    transform: rotate(-180deg);
+    margin-left: 20px;
+}

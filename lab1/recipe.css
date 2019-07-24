@@ -1,0 +1,54 @@
+.heading {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    padding: 5px;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, serif;
+    letter-spacing: 0.25em;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.heading-main {
+    font-size: 22pt;
+}
+
+.heading-sub {
+    font-size: 18pt;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    color: #404040;
+    font-family: Georgia, Garamond, serif;
+    font-size: 11pt;
+    background-image: url("../images/recipeImages/background.gif");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #FFFFA8;
+}
+
+body a {
+    margin-left: 20px;
+    color: #A4A400;
+}
+
+abbr {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul {
+    list-style-image: url('../images/recipeImages/pie_icon.gif');
+}
+
+.block-display {
+    display: block;
+}
