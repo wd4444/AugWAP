@@ -1,0 +1,72 @@
+/* Section 4 */
+#a, #b {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+}
+#a { background-color: lightblue;
+    float: left;
+}
+#b { background-color: pink;
+    float: right;
+}
+#c { background-color: lightgray; }
+
+
+/* Section 3 */
+.container {
+    display: block;
+    background-color: lightgray;
+}
+.header {
+    background-color: yellow;
+}
+
+.area1 {
+    float: right;
+    width: 100px;
+    background-color: lightblue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.area2 {
+    float: right;
+    width: 100px;
+    background-color: lightblue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Section 2 */
+ul {
+    background-color: red;
+    height: 60px;
+}
+
+ul li {
+    display: inline-block;
+    border: 1px solid black;
+    width: auto;
+    height: 20px;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+
+/* Section 1 */
+#outer {
+    border: 2px dashed black;
+    padding: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 10px;
+    display: inline-block;
+}
