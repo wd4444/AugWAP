@@ -42,7 +42,7 @@ legend {
 }
 
 article {
-    alignment-adjust: central;
+    align-content: center;
 }
 
 button {
