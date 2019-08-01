@@ -60,7 +60,7 @@
 
 
     /* Inheritance Function Constructor */
-    console.log("====Section for Object literal Inheritance====")
+    console.log("====Section for Function Constructor Inheritance====")
 
     function Person(name, age, hobby = "unknown") {
         this.name = name;
@@ -95,6 +95,7 @@
     teacher2.favouriteHobby();
     console.log(teacher2.species);
 
+    /* Inheritance using Object.create */
     console.log("====Section for Object.create Inheritance====")
     const Person1 = {
         constructor: function(name, age, hobby = "unknown") {
