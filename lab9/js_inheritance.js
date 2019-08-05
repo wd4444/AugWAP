@@ -62,17 +62,34 @@
     /* Inheritance Function Constructor */
     console.log("====Section for Function Constructor Inheritance====")
 
-    function Person(name, age, hobby = "unknown") {
-        this.name = name;
-        this.age = age;
-        this.hobby = hobby;
+    const Person = function (name, age, hobby) {
+        var name = name;
+        var age = age;
+        var hobby = hobby;
+        var self = this;
+        function favouriteHobby (){
+                console.log("My name is " + name + " and my hobby is " + hobby);
+            }
+            const getName = () => {
+                return name;
+            }
+
+            return {
+                favouriteHobby: favouriteHobby,
+                getName: getName
+            }
     }
 
-    Person.prototype.favouriteHobby = function () {
-        console.log("My name is " + this.name + " and my hobby is " + this.hobby);
-    }
+    // Person.prototype.favouriteHobby = function () {
+    //     console.log("My name is " + this.name + " and my hobby is " + this.hobby);
+    // }
 
     Person.prototype.species = "homo sapien";
+
+    const testPerson = Person("ABC", 98, "kfldkfl");
+    console.log( "test person")
+    console.log( testPerson.getName())
+    console.log( testPerson.favouriteHobby())
 
     function Teacher(name, age, hobby, subject = "unkown") {
         Person.call(this, name, age, hobby);
