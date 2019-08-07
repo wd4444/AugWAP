@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clean Screen!</title>
+    <link href="clean_screen.css" type="text/css" rel="stylesheet"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="clean_screen.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="row">
+    <div class="column">
+        Width<br>
+        Growth amount<br>
+        Grow rate<br>
+		Number circles<br>
+    </div>
+    <div class="column">
+        <input id="txtWidth" type="number" name="width" min="1" max="1000" value="50"/><br>
+        <input id="txtGrowthAmount" type="number" name="width" min="1" max="100" value="10"/><br>
+        <input id="txtGrowRate" type="number" name="width" min="1" max="3000" value="250"/><br>
+		<input id="txtNumberCircles" type="number" name="width" min="1" max="50" value="5"/><br>
+		<input id="btnStart" type="button" value="Start!" name="start"/>
+    </div>
+</div>
+<div id="content"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.circleBase {
+    border-radius: 50%;
+}
+
+.circleShape {
+    border: 1px solid lightgray;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.column {
+    float: left;
+    width: 15%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type="number"] {
+    width: 70px;
+    border: 1px solid #ccc;
+
+    -ms-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+input[type="button"] {
+    width: 75px;
+	border: 1px solid #ccc;
+    background-color: lightgreen;
+}
+
+#content {
+    position: relative;
+}
+
+.selectedCircle {
+    opacity: 0.9;
+}
