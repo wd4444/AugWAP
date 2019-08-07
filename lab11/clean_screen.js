@@ -1,5 +1,6 @@
 "use strict";
 $(document).ready(function () {
+    let hexValues = Array('1','2','3','4','5','6','7','8','9','A','B','C','D','E','F');
     let growingCircleInterval;
     $("#content").on({
         click: function () {
@@ -24,7 +25,7 @@ $(document).ready(function () {
         for (let i = 0; i < numberCircles; i++) {
             let posx = (Math.random() * ($(document).width() - divsize) / 2).toFixed();
             let posy = (Math.random() * ($(document).height() - divsize) / 2).toFixed();
-            let color = '#' + Math.round(0xffffff * Math.random()).toString(16);
+            let color = getRandomColor();
             let newEle = $("<div>").addClass("circleBase circleShape").css({
                 "top": posy + "px",
                 "left": posx + "px",
@@ -33,20 +34,18 @@ $(document).ready(function () {
             newContent.append(newEle);
         }
         $("#content").append(newContent);
-        // $(".circleBase").on({
-        //     click: function () {
-        //         this.remove();
-        //     },
-        //     hover: function () {
-        //         $(this).addClass("selectedCircle");
-        //     },
-        //     mouseleave: function () {
-        //         $(this).removeClass("selectedCircle");
-        //     }
-        // });
         growingCircleInterval = setInterval(function () {
             size += growthAmount;
             $(".circleBase").width(size + "px").height(size + "px");
         }, growRate);
     });
+    function getRandomColor() {
+        let color = "#";
+        let item;
+        for (let i = 0; i < 6; i++) {
+            item = hexValues[Math.floor(Math.random()*hexValues.length)];
+            color = color + item;
+        }
+        return color;
+    }
 });
