@@ -7,24 +7,12 @@
         <servlet-name>SimpleCalculatorServlet</servlet-name>
         <servlet-class>cs472.mum.SimpleCalculatorServlet</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>ImprovedCalculatorServlet</servlet-name>
-        <servlet-class>cs472.mum.ImprovedCalculatorServlet</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>
             SimpleCalculatorServlet
         </servlet-name>
         <url-pattern>
             /simple-calculator
-        </url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>
-            ImprovedCalculatorServlet
-        </servlet-name>
-        <url-pattern>
-            /improved-calculator
         </url-pattern>
     </servlet-mapping>
 </web-app>

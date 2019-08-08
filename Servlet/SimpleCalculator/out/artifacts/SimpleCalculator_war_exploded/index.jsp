@@ -21,22 +21,5 @@
     <input type="text" name="num4"><br>
     <input type="submit" value="submit">
 </form>
-
-<h1>Improved Calculator</h1>
-<form method='post' action="./improved-calculator">
-  <input type="text" name="num1">
-  +
-  <input type="text" name="num2">
-  =
-  <input type="text" name="result1">
-  <br>
-  <input type="text" name="num3">
-  *
-  <input type="text" name="num4">
-  =
-  <input type="text" name="result2">
-  <br>
-  <input type="submit" value="submit">
-</form>
 </body>
 </html>
