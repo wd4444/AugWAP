@@ -3,6 +3,10 @@ package controller;
 
 import app.Guest;
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -42,8 +46,17 @@ public class GuestServlet extends HttpServlet {
         }
 
         /* get  input */
-        String firstInput = request.getParameter("first");
-        String lastInput = request.getParameter("last");
+        BufferedReader br = request.getReader();
+        String str, wholeStr = "";
+        while ((str = br.readLine()) != null) {
+            wholeStr += str;
+        }
+        JsonObject jsonObject = new JsonParser().parse(wholeStr).getAsJsonObject();
+
+//        String firstInput = request.getParameter("first");
+//        String lastInput = request.getParameter("last");
+        String firstInput = jsonObject.get("first").isJsonNull() ? "" : jsonObject.get("first").getAsString();
+        String lastInput = jsonObject.get("last").isJsonNull() ? "" : jsonObject.get("last").getAsString();
         guestList.add(new Guest(firstInput, lastInput));
         
         String JSONguests;
